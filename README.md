@@ -1,17 +1,17 @@
 # Tarea1Dist
 
-Máquina 10.10.28.154 -> Logística
-Máquina 10.10.28.155 -> Cliente
-Máquina 10.10.28.156 -> Camión(es)
-Máquina 10.10.28.157 -> Finanzas
+- Máquina 10.10.28.154 -> Logística
+- Máquina 10.10.28.155 -> Cliente
+- Máquina 10.10.28.156 -> Camión(es)
+- Máquina 10.10.28.157 -> Finanzas
 
-Todos los archivos están en la carpeta grpc, a excepcion de finanzas. Por problemas con los import de paquetes, fue imposible dejarlos más ordenados.
+- Todos los archivos están en la carpeta grpc, a excepcion de finanzas. Por problemas con los import de paquetes, fue imposible dejarlos más ordenados.
 
-Finanzas se encuentra en RabbitMQ.
+- Finanzas se encuentra en RabbitMQ.
 
-Para correr cada programa, ir a la carpeta grpc y ejecutar "make run". La única excepcion es Finanzas; para esta se debe ir a la carpeta RabbitMQ y ejecutar "make run".
+- Para correr cada programa, ir a la carpeta grpc y ejecutar "make run". La única excepcion es Finanzas; para esta se debe ir a la carpeta RabbitMQ y ejecutar "make run".
 
-Todos los archivos csv están en la carpeta archivos; 
+- Todos los archivos csv están en la carpeta archivos; 
 	- El cliente lee desde retail.csv y pymes.csv. 
 	- El archivo indexAct lo usa logistica para ver el ID que le da a cada pedido. 
 	- Al correr el Cliente se crea 'registro.csv' en logistica, que indica las órdenes que han sido ingresadas por el cliente. 
