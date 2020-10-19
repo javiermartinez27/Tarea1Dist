@@ -82,6 +82,13 @@ func recive(segundos int) {
 				if err != nil {
 					log.Fatalf("Cannot retrieve quantity of %c: %s\n", ganancia, err)
 				}
+				intentos, err := strconv.Atoi(test[1])
+				if err != nil {
+					log.Fatalf("Cannot retrieve quantity of %c: %s\n", ganancia, err)
+				}
+				if intentos >= 2 {
+					ganancia = ganancia - intentos*10
+				}
 				g += ganancia
 				EscribirCsv(mensaje)
 
